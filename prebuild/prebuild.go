@@ -20,11 +20,25 @@ import (
 
 // Version is the version of this module, whose release provides the
 // prebuilds.
-const Version = "0.0.0"
+const Version = "0.1.0"
 
 // The SHA-256 checksums of the prebuilds attached to the release of this
 // version, which the publish workflow checks before releasing them.
-var checksums = map[string]string{}
+var checksums = map[string]string{
+	"android-arm":         "a186c89365ef51c4913cb05395ba7d456659962f07736c3da23a41473d4a1885",
+	"android-arm64":       "8e4c363e71140fd131f0ad4adf510d915c25e88482573f72221e76412f5f4c8e",
+	"android-ia32":        "8ef1cc9d0323a1b41ebc66283b061469544979837d4d008c779efe3184e23bdc",
+	"android-x64":         "e17583816c469352c3b6e86b71d958d8a66ab2e0372e59d301fc08a848205131",
+	"darwin-arm64":        "fbc9648ab5117ed6d4a44c1ec93a45f29c8f604916112384f865a43e70d9a7d0",
+	"darwin-x64":          "bbaeb171c599ab6fc14c28dec1b3d5e0a1ee87afcc52e65ae69eb63f1f6c2190",
+	"ios-arm64-simulator": "ab039ce312d6e7ac74bce52fe6a0df57f26124396009663ff1a7e1425952bebd",
+	"ios-arm64":           "f6cfa414468ff70be78395694a0f2cd64e16d7c13ba15252f5fd8083b34c0258",
+	"ios-x64-simulator":   "6eddeabdbaae88ca5fe88997582b2640575a88cbdc71dc583bccb550156f9046",
+	"linux-arm64":         "3e858acbd418c64b2ec95d280c37765b98f1c3e9e591276633396db8d5308540",
+	"linux-x64":           "aeb395ab1f96661d81062b412b754fa5316199fad6377c6177e6d066de9577c9",
+	"win32-arm64":         "c1be7a1d80e4cd0df275df7bde3bca4683dc49ac4c39d5f32befa0bc5d80fa4f",
+	"win32-x64":           "9e2172b5788aa127fe1bbb47c98a8c768c4cc7092c1e82d343ce96d1965892b3",
+}
 
 const mirror = "https://github.com/holepunchto/bare-kit-golang/releases/download"
 
